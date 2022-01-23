@@ -1,0 +1,139 @@
+
+body
+{
+    margin: auto;
+    text-align: center; /* This property only works if there is no width assigned to the text......if some width is assigned to the text then it wont work*/
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.3em;  /*1em = 16px = 100% */ /* so 70px = 4.375em = 437.5%  */
+ 
+}
+
+h1
+{
+    font-family: 'Yellowtail', cursive;
+    margin-top:50px;
+
+    /* the below line is the static way of setting a size in css */
+    /* font-size: 70px; */
+
+    /* font-size: 4.375em;  If we use em on a child element then it will inherit the value of the parent's font size as 1em and custmize the child's font size according to that */
+
+    font-size: 4.375rem; /*If we use rem the element does not inherit the value of its parent...here the element chages the value compared to the root i.e the html page and here the value of 1rem = 16px */
+
+    /* padding-top: 50px; */
+    /* width: 10%;
+    margin: 0 auto; If  margine is applied then this line will move the text to the center position */
+}
+
+#second
+{
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 1024px) {
+    .top_container
+    {
+        width: 120vh;
+    }
+    .profile
+    {
+        width: 120vh;
+    }
+    .bottom-container
+    {
+        width: 120vh;
+    }
+    .skills
+    {
+        width: 120vh;
+
+    }
+    .contact-me
+    {
+        width: 120vh;
+    }
+}
+@media screen and (max-height: 680px) {
+    .top_container
+    {
+        height: 107vh;
+        width: 150vh;
+    }
+}
+@media screen and (min-height: 680px) {
+    .top_container
+    {
+        height: 94vh;
+        
+    }
+}
+
+.top_container
+{
+    
+    background-color: #F5EEDC;
+    padding-top: 100px;
+    /* height: 93vh; */
+    
+}
+
+.middle-container
+{
+    margin-bottom: 2%;
+}
+.nv{
+    background-color: #F5EEDC !important;
+  
+    
+}
+
+.blk{
+    color: black;
+}
+.bottom-container
+{
+   background-color: #f6e6bb;
+   margin-bottom: 0px;
+   padding-top: 2%;
+} 
+/* .skill-row
+{
+    width: 50%;
+    margin: 100px auto;
+    line-height: 2;
+} */
+
+
+.pro
+{
+    text-decoration:underline;
+}
+#bottom-cloud
+{
+    position: absolute;
+    left: 30%;
+}
+
+@media screen and (max-width: 1024px)
+{
+    #top-cloud
+    {
+        left: 130%;
+    }
+}
+#top-cloud
+{
+    position: absolute;
+    right: 30%;
+    top: 5%;
+}
+#last-line
+{
+    margin-bottom: 0px;
+    padding-bottom: 2%;
+}
+
+
+/* note :- an element with display inline doesnot occupy the whole row but it does not let you change the width of the element  */
+/* note :- an element with display block occupies the whole row but it lets you change the width of the element  */
+/* note :- In order to get benefits of both displays we have display called 'inline-block' */
+/* note :- when our element is inside a container then if we use position: absolute  then it will move relatively to the parent container*/
